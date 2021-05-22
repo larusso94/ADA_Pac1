@@ -1,0 +1,68 @@
+CANVIS REALITZATS:
+
+Regles de negoci:
+
+Les regles són restriccions. Indicar que les dades es guardes, quines són, o què pot fer cada actor, no ho serien.
+
+Casos d’ús:
+
+Als extends els hi falta la condició i, en alguns casos, l’extension point.
+
+Els casos d’ús que no tenen actor primari i no estan inclosos en un que si el tingui no es poden executar mai (03, 04, 05, 06, 07 i 08).
+
+Es pot prescindir que casos d’ús sense actor primari que, per exemple, només estiguin inclosos en un altre (19, 16, 13, 12, etc.).
+
+El procés automàtic seria un cas d’ús que demanaria executar el cas d’ús per comprovar i assignar descomptes
+
+ 
+
+Esp. Textual:
+
+En aquesta fase no cal fer control d’errors (no ho canvieu).
+
+Per mostrar una dada, el sistema primer l’ha de llegir.
+
+Les alternatives han d’especificar-se com condició + passos alternatius
+
+La selecció del cas d’ús no és un pas del procés
+
+Cal especificar els passo amb detall: què es llegeix, què mostra, què es pot seleccionar (fer comanda, per exemple), així com les crides a casos d’ús inclosos o estesos, si cal.
+
+Falten moltes accions del sistema a la majoria de casos d’ús (si només participa l’usuari, llavors l’aplicació figura que no fa res).
+
+Entre els casos d’ús inclosos i estesos necessitaríeu passar paràmetres per saber quina comanda esteu tractant, per exemple.
+
+ 
+
+ 
+
+Classes d’entitat:
+
+ 
+
+Entre Comanda i Producte hi hauria una classe associativa que guardaria la quantitat de cada producte encomanada.
+
+Menu tindria una composició amb Beguda i Pizza predefinida, no una composició.
+
+ 
+
+ 
+
+Activitats:
+
+Cal indicar el estereotips dels nodes d’objecte (frontera i entitats).
+
+Algunes accions de l’actor les faria el sistema, en particular, les crides a altres casos d’ús.
+
+En alguns casos d’ús falten tots els nodes d’objecte.
+
+ 
+
+Seqüències:
+
+Les classes de fronter les crearia la classe de control
+
+No es poden enviar missatge a l’actor i aquest només es pot comunicar amb les classes de frontera.
+
+Al diagrama de seqüències han d’aparèixer línies de vida de totes les classes del cas d’ús.
+
